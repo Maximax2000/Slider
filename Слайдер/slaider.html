@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Слайдер</title>
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    /* дополнительные стили для этого примера */
+    .itcss__items {
+      counter-reset: slide;
+    }
+
+    .itcss__item {
+      counter-increment: slide;
+    }
+
+    .itcss__item>div::before {
+      content: counter(slide);
+      position: auto;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+ <!-- Разметка слайдера -->
+ <div class="itcss">
+  <div class="itcss__wrapper">
+    <div class="itcss__items">
+      <div class="itcss__item">
+        <div style="height: 375px; background: white;">
+
+          <div class="card_s">
+            <div class="image">
+                <img src="images/img8.jpg">
+            </div>
+          </div>
+          <br>
+
+          <div class="name">
+            Елена Попова
+          </div>
+
+          <div class="rating-mini">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span class="active"></span>
+          </div>
+          <br>
+
+          <div class="text">
+            Отдохнули хорошо, все понравилось, Санаторий замечательный, кормят очень хорошо, даже слишком, очень разнообразное меню и очень вкусно, и красиво очень в самом санатории и территория огромная ухоженная, и программа запланирована, все проходит интересно, увлекательно. В путевку входило мало нужных мне процедур, и пришлось доплачивать, но это того стоило. Рекомендую санаторий для семейного отдыха и оздоровления.
+          </div>
+        </div>
+
+      </div>
+      <div class="itcss__item">
+        <div style="height: 375px; background: white;">
+
+          <div class="card_s">
+            <div class="image">
+                <img src="images/img2.jpg">
+            </div>
+          </div>
+          <br>
+
+          <div class="name">
+            Дмитрий Холодилин
+          </div>
+
+          <div class="rating-mini">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span></span>
+          </div>
+          <br>
+
+          <div class="text">
+            Неплохой саноторий, приятные и вежливые сотрудники. Уютно, красивая природа, чистый воздух, имеются прогуочные зоны на территории. Хороший вариант совместить приятное с полезным - отдых и лечение. Приезжал с остеоартрозом шейных позвонков, после лечения стало гораздо легче, большое спасибо! 
+          </div>
+
+        </div>
+      </div>
+      <div class="itcss__item">
+        <div style="height: 375px; background: white;">
+
+          <div class="card_s">
+            <div class="image">
+                <img src="images/img10.jpg">
+            </div>
+          </div>
+          <br>
+
+          <div class="name">
+            Анастасия Остапова
+          </div>
+        
+          <div class="rating-mini">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span class="active"></span>
+          </div>
+          <br>
+
+          <div class="text">
+            Мой самый любимый санаторой!
+            Постоянно приезжаю отдохнуть и поправить здоровье. Каждый раз возвращаюсь домой как новенькая, заряженная и полная сил!
+            Всем советую, приезжайте, не пожалеете :)
+          </div>
+
+        </div>
+      </div>
+      <div class="itcss__item">
+        <div style="height: 375px; background: white;">
+
+          <div class="card_s">
+            <div class="image">
+                <img src="images/img3.jpg">
+            </div>
+          </div>
+          <br>
+
+          <div class="name">
+            Ольга Штейгер
+          </div>
+        
+          <div class="rating-mini">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span class="active"></span>
+          </div>
+          <br>
+
+          <div class="text">
+            Привозила маму на лечение. Она была в восторге, всё понравилось!!! Отличное питание, вежливый персонал, свежий воздух. После процедур её состояние значительно улучшилось. Прекрасное место, обязательно приедем снова. 
+          </div>
+
+        </div>
+      </div>
+      <div class="itcss__item">
+        <div style="height: 375px; background: white;">
+
+          <div class="card_s">
+            <div class="image">
+                <img src="images/img6.jpg">
+            </div>
+          </div>
+          <br>
+
+          <div class="name">
+            Мансур Фахрутдинов
+          </div>
+        
+          <div class="rating-mini">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span class="active"></span>
+          </div>
+          <br>
+
+          <div class="text">
+            Самый лучший саноторой из всех, где я бывал. Вкусная и разнообразная пища, уютные аппартаменты, имеются все удобства для комфортного отдыха и времяпровождения. В хорошую погоду можно прогуляться по территории санатория, здесь очень красиво, ценителям природы понравится. Услуги по лечению разнообразны и недороги. После посещения санатория самочусвтие значительно улучшилось.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+  <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+</div>
+</body>
+</html>
